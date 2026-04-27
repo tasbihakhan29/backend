@@ -1,9 +1,8 @@
 services:
   - type: web
     name: medsync-backend
-    runtime: java
+    runtime: docker
     plan: free
-    buildCommand: mvn clean package -DskipTests
-    startCommand: java -jar target/medsync-backend-1.0.0.jar
+    dockerfilePath: ./Dockerfile
     healthCheckPath: /api/public/health
 

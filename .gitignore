@@ -1,0 +1,15 @@
+target/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Env files
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
