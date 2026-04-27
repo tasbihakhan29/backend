@@ -12,15 +12,26 @@ Set these in Render:
 - `JWT_SECRET` — a long random secret for JWT signing
 - `APP_CORS_ALLOWED_ORIGINS` — comma-separated frontend origins, e.g. `https://your-frontend.onrender.com`
 - `APP_SEED_DEFAULT_ADMIN` — keep `false` on Render
+- `DB_POOL_SIZE` — optional, keep `1` on Render with Supabase pooler
+- `DB_MIN_IDLE` — optional, keep `0` on Render with Supabase pooler
 
 ## Supabase connection note
 
-If Render cannot reach the direct Supabase host, use the **Session Pooler** connection string from Supabase instead of the direct `db.<project-ref>.supabase.co:5432` URL.
+For Render, prefer the **Transaction Pooler** connection string from Supabase.
+
+If you must use the **Session Pooler**, keep the Hikari pool very small (for example `DB_POOL_SIZE=1`) or you can hit Supabase's client limit.
 
 Typical JDBC format:
 
 ```text
 jdbc:postgresql://<pooler-host>:6543/postgres?sslmode=require&pgbouncer=true
+```
+
+Example Render values:
+
+```text
+DB_POOL_SIZE=1
+DB_MIN_IDLE=0
 ```
 
 ## Render deploy settings
