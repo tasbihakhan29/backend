@@ -1,40 +1,47 @@
 # MedSync City Backend Application Configuration
-# Copy this file to application.properties and fill in your actual values
-# Never commit application.properties to git - it contains sensitive credentials
+# Copy these values to your Render environment variables or to application.properties for local development.
 
 # ============================================================
 # SERVER CONFIGURATION
 # ============================================================
-server.port=8080
+# Render injects PORT automatically for web services.
+server.port=${PORT:8080}
 
 # ============================================================
-# DATABASE CONFIGURATION
+# DATABASE CONFIGURATION (Supabase PostgreSQL)
 # ============================================================
-# For MySQL 8.0:
-spring.datasource.url=jdbc:mysql://localhost:3306/medsync_db?useSSL=false&serverTimezone=UTC
-spring.datasource.username=medsync_user
-spring.datasource.password=YOUR_DB_PASSWORD
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+# Prefer the Supabase Session Pooler URL on Render if your network is IPv4-only.
+spring.datasource.url=${DB_URL}
+spring.datasource.username=${DB_USERNAME:postgres}
+spring.datasource.password=${DB_PASSWORD}
+spring.datasource.driver-class-name=org.postgresql.Driver
 
 # JPA / Hibernate
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=false
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.properties.hibernate.format_sql=true
 
 # ============================================================
 # JWT CONFIGURATION
 # ============================================================
-app.jwt.secret=YOUR_SECRET_KEY_MIN_256_BITS_RECOMMENDED
+app.jwt.secret=${JWT_SECRET}
 app.jwt.expiration=86400000
 
 # ============================================================
 # CORS CONFIGURATION
 # ============================================================
-app.cors.allowed-origins=http://localhost:3000
+# Comma-separated list of allowed frontend origins.
+app.cors.allowed-origins=${APP_CORS_ALLOWED_ORIGINS:http://localhost:3000}
+
+# ============================================================
+# BOOTSTRAP DATA
+# ============================================================
+# Keep disabled on Render. Set true only for local/dev seeding.
+app.seed-default-admin=${APP_SEED_DEFAULT_ADMIN:false}
 
 # ============================================================
 # LOGGING
 # ============================================================
 logging.level.root=INFO
-logging.level.com.medsync=DEBUG
+logging.level.com.medsync=INFO

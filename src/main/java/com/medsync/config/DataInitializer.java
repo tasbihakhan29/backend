@@ -2,32 +2,39 @@ package com.medsync.config;
 
 import com.medsync.entity.User;
 import com.medsync.repository.UserRepository;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Component
-@RequiredArgsConstructor
-@Slf4j
 public class DataInitializer implements CommandLineRunner {
 
-    private final UserRepository userRepository;
-    private final PasswordEncoder passwordEncoder;
+    @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+    @Value("${app.seed-default-admin:false}")
+    private boolean seedDefaultAdmin;
 
     @Override
     public void run(String... args) {
+        if (!seedDefaultAdmin) {
+            System.out.println("Default admin seeding is disabled");
+            return;
+        }
+
         if (!userRepository.existsByUsername("admin")) {
-            User admin = User.builder()
-                    .username("admin")
-                    .email("admin@medsync.city")
-                    .password(passwordEncoder.encode("Admin@123"))
-                    .role(User.Role.CITY_ADMIN)
-                    .status(User.AccountStatus.ACTIVE)
-                    .build();
+            User admin = new User();
+            admin.setUsername("admin");
+            admin.setEmail("admin@medsync.city");
+            admin.setPassword(passwordEncoder.encode("Admin@123"));
+            admin.setRole(User.Role.CITY_ADMIN);
+            admin.setStatus(User.AccountStatus.ACTIVE);
             userRepository.save(admin);
-            log.info("Default admin created: username=admin, password=Admin@123");
+            System.out.println("Default admin created: username=admin, password=Admin@123");
         }
     }
 }
