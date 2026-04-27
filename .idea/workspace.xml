@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3bc00a7-4c37-46fe-93f3-12f1af6013bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medsync/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medsync/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medsync/entity/AuditLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medsync/entity/AuditLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medsync/entity/Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medsync/entity/Hospital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medsync/entity/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medsync/entity/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medsync/entity/MedicineBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medsync/entity/MedicineBatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medsync/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medsync/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medsync/service/MedicineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medsync/service/MedicineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medsync/service/RequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medsync/service/RequestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/shared/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/shared/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/RegisterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/admin/AdminDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/admin/AdminDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/hospital/HospitalExpiry.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/hospital/HospitalExpiry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/hospital/HospitalInventory.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/hospital/HospitalInventory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/hospital/MedicineSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/hospital/MedicineSearch.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_E:/medsync/backend" value="3BqSenofZuIYpLUM5WgHUCsPYSB" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tasbihakhan29&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tasbihakhan29/MedSync&quot;,
+    &quot;accountId&quot;: &quot;69ff7aa4-54b5-4f0a-a253-5024d5fb8462&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3BqSenofZuIYpLUM5WgHUCsPYSB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MedSyncApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3bc00a7-4c37-46fe-93f3-12f1af6013bf" name="Changes" comment="" />
+      <created>1775215209624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775215209624</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

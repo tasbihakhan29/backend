@@ -1,0 +1,40 @@
+# MedSync City Backend Application Configuration
+# Copy this file to application.properties and fill in your actual values
+# Never commit application.properties to git - it contains sensitive credentials
+
+# ============================================================
+# SERVER CONFIGURATION
+# ============================================================
+server.port=8080
+
+# ============================================================
+# DATABASE CONFIGURATION
+# ============================================================
+# For MySQL 8.0:
+spring.datasource.url=jdbc:mysql://localhost:3306/medsync_db?useSSL=false&serverTimezone=UTC
+spring.datasource.username=medsync_user
+spring.datasource.password=YOUR_DB_PASSWORD
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# JPA / Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.properties.hibernate.format_sql=true
+
+# ============================================================
+# JWT CONFIGURATION
+# ============================================================
+app.jwt.secret=YOUR_SECRET_KEY_MIN_256_BITS_RECOMMENDED
+app.jwt.expiration=86400000
+
+# ============================================================
+# CORS CONFIGURATION
+# ============================================================
+app.cors.allowed-origins=http://localhost:3000
+
+# ============================================================
+# LOGGING
+# ============================================================
+logging.level.root=INFO
+logging.level.com.medsync=DEBUG
